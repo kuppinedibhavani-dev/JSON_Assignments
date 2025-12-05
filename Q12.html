@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add and Remove Paragraphs</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            padding:20px;
+        }
+        h2{
+            margin-bottom:10px;
+        }
+        #buttonContainer{
+            display:flex;
+            gap:10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        button{
+            padding:10px 15px;
+            border:none;
+            background-color: blueviolet;
+            color:white;
+            font-size: 16px;
+            border-radius:6px;
+            cursor: pointer;
+            transition: 0.3s;
+
+        }
+        button:hover{
+            background-color:brown;
+        }
+        #container{
+            width:90%;
+            max-width: 500px;
+            background: #f7f7f7;
+            padding:15px;
+            border-radius:6px;
+            border:1px solid #ccc;
+        }
+        p{
+            background:#e9ecef;
+            padding:8px;
+            border-radius: 4px;
+            margin:6px 0;
+        }
+    </style>
+</head>
+<body>
+    <h2>Paragraph Manager</h2>
+    <div id="buttonContainer">
+    <button id="addBtn">Add Paragraph</button>
+    <button id="removeBtn">Remove Last Paragraph</button>
+    </div>
+    <div id="container"></div>
+    
+</body>
+<script src="Q12.js"></script>
+</html>
